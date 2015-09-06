@@ -1,0 +1,129 @@
+All codes are well commented. The names of the parameters are in line with the ones in our report.
+Please first load the BRML Tool Box by Dr. David Barber in order to run the following MATLAB programmes. 
+
+
+
+################################################################################
+################################################################################
+###########################  MATLAB CODE  ######################################
+################################################################################
+################################################################################
+
+
+
+HMMviterbiGSK     (corresponds to Basic Model in report)
+HMMviterbiGSK2    (corresponds to Model 2 in report)
+HMMviterbiGSK3    (corresponds to Model 3 in report)
+HMMviterbiGSK4    (corresponds to Model 4 in report)
+HMMviterbiGSK5    (corresponds to Model 5 in report)
+
+
+are the Viterbi algorithms functions adapted from Dr. Barber's BRML toolbox.
+
+
+DefineMatrixGSK     (corresponds to Basic Model in report)
+DefineMatrixGSK2    (corresponds to Model 2 in report)
+DefineMatrixGSK3    (corresponds to Model 3 in report)
+DefineMatrixGSK4    (corresponds to Model 4 in report)
+DefineMatrixGSK5    (corresponds to Model 5 in report)
+
+are the programmes that define the parameters (transtion/emission matrices etc.) needed by the viterbi functions,
+using the methods expained in the report. 
+
+
+
+
+
+EvaluaModel
+
+After defining the parameters in DefineMatrixGSK and the viterbi function HMMviterbiGSK, we can use the programme in 
+EvaluaModel to compute the Recall, Precision and F-measure for the combination of parameters define previously by 
+DefineMatrixGSK and HMMviterbiGSK. 
+
+
+EvaluateHMM
+
+Combining all the above programmes and viterbi functions, we create function EvaluateHMM, which returns us F or Recall or
+Precision by simply inputting the parameters. 
+
+
+
+TrailMu
+TrailMu2
+TrailMu3
+
+show the table of F-measure for combinations of alpha and beta, in each iteration
+
+
+
+
+Trailinc
+Trailinc2
+
+show the table of F-measure for combinations of gamma, delta, inc2, dec2, in each iteration
+
+
+
+################################################################################
+################################################################################
+########################### R Code #############################################
+################################################################################
+################################################################################
+
+Pre-process:
+The pre processing codes as described in the report.
+
+
+CohortAna: 
+All the Possion Regression for cohort level analysis and the calculation of Recall\Precision of 
+Method X are in this file.
+
+
+ggplot: 
+The programme that plots the graphs in the report
+
+
+BayesianHypothesisTest:
+The function written for Bayesian Hypothesis Testing, called BHTest
+
+
+ExecBHTest:
+The programme that is for the execution of the Bayesian Hypothesis Test with some plotting.
+
+
+
+Other R codes that are not essential:
+2Level, Multilevel, GSK, ProcessData
+
+################################################################################
+################################################################################
+########################### Data Set ###########################################
+################################################################################
+################################################################################
+
+
+exacerbation:
+The raw data that has just been sorted with Excel.
+
+
+
+ExacData: 
+The output of the preprocessed data. 
+
+
+
+
+BestPara: Exacrbation detected results for the optimum parameters at pi=0.8 for F-measure
+BestPara2: Exacrbation detected results for the optimum parameters at pi=0.85 for F-measure
+
+
+
+emission: The sample emission distribution data in the report for plotting 
+
+
+Method X Data: the data that stores the exacerbations detected by the Method x, as we discussed in the report.
+
+
+
+
+
